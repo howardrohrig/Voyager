@@ -1,0 +1,175 @@
+body {
+    background-color: #E2EDFF;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: white;
+}
+
+a,h5,p {
+    color: #1B3B66;
+    transition: color .5s;
+}
+
+hr {
+    height: 2px;
+    border-radius: 20px;
+    background-color: #1B3B66;
+}
+
+button.rounded-circle {
+    background-color: #E2EDFF;
+    height: 50px;
+    width: 50px;
+}
+
+button.rounded-circle:hover {
+    background-color: #d4d7e6;
+}
+
+button.rounded-circle i {
+    transition: transform .5s, color .5s;
+    color: #f0ad4e;
+}
+
+button.rounded-circle i:hover {
+    transform: rotateZ(360deg);
+    color: darkgrey;
+}
+
+.nav-brand:hover, .nav-link:hover, a.active{
+    color: #1B3B90;
+}
+
+a.active:after, a.nav-link:after {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 3px;
+    width: 0px;
+    background: transparent;
+    transition: width .5s ease, background-color .5s ease;
+}
+
+a.active:after, a.nav-link:hover:after {
+    width: 100%;
+    border-radius: 20px;
+    background: #1B3B90;
+}
+
+a.carousel-control-prev, a.carousel-control-next {
+    background-color: rgba(0,0,0,10%); 
+    width: 10%;
+    opacity: 1;
+}
+
+a.carousel-control-prev:hover, a.carousel-control-next:hover {
+    background-color: rgba(0,0,0,20%); 
+}
+.carousel-caption {
+    background-color: rgba(0,0,0,50%);
+    border-radius: 50px;
+}
+
+.carousel-caption p, .carousel-caption h5 {
+    color: white;
+}
+
+.card, .card.rounded-pill{
+    background-color: #F1F6FF;
+    transition: background-color .3s;
+}
+
+.card.rounded-pill:hover {
+    background-color: #d4d7e6;
+}
+
+.card-img-top {
+    height: 400px; 
+    width: 100%; 
+    background-image: url(img/airportLuggage.jpg); 
+    background-position: center; 
+    background-size: cover;
+}
+
+.card-img-top.rounded-pill {
+    height: 100%;
+    background-color: #F1F6FF;
+}
+
+.cardWidth {
+    max-width: 25rem;
+}
+
+.cardImgHeight {
+    height: 150px;
+}
+
+.card-header {
+    background-color: #1B3B66;
+}
+
+.card-header h4 {
+    color: white;
+    font-weight: bold;
+}
+
+a.btn {
+    background-color: #1B3B66;
+    color: white;
+    transition: transform .3s, background-color .3s;
+}
+
+a.btn:hover {
+    background-color: #1B3B90;
+    color: white;
+    position: relative;
+    transform: translateY(-3px);
+}
+
+a.btn.btn-pill {
+    background-color: transparent;
+}
+
+#carouselItem1 {
+    background-image: url(../img/airportLuggage.jpg);
+}
+
+#carouselItem2 {
+    background-image: url(../img/universalOrlando.jpg);
+}
+
+#carouselItem3 {
+    background-image: url(../img/chickenGuy.jpg);
+}
+
+#pillImage1 {
+    background-image: url(../img/honeyMoon.jpg);
+}
+
+#pillImage2 {
+    background-image: url(../img/ouachita.jpg);
+}
+
+#pillImage3 {
+    background-image: url(../img/universalOrlando.jpg);
+}
+
+#pillImage4 {
+    background-image: url(../img/chickenGuy.jpg);
+}
+
+#cardImage1 {
+    height: 150px;
+    background-image: url(../img/honeyMoon.jpg); 
+}
+
+#cardImage1 {
+    background-image: url(../img/honeyMoon.jpg); 
+}
+
+#cardImage2 {
+    background-image: url(../img/ouachita.jpg); 
+}

@@ -13,15 +13,15 @@
 
     
 </head>
-<body class="bg-primary m-0 p-0">
+<body>
 
 <!------------------------------------------Navigation------------------------------------------------------>
 
-    <nav class="navbar sticky-top navbar-expand-md navbar-dark bg-dark shadow p-0">
+    <nav class="navbar sticky-top navbar-expand-md shadow p-0">
         <div class="container-fluid mx-0 px-0">
-            <a class="navbar-brand text-light ml-5" href=#><h1>Voyager</h1></a>
+            <a class="navbar-brand ml-5" href=#><h1>Voyager</h1></a>
             <i class="fa fa-lightbulb-o fa-2x text-warning ml-auto mr-4 d-md-none" aria-hidden="true"></i>
-            <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navContent"
+            <button class="navbar-toggler navText" type="button" data-toggle="collapse" data-target="#navContent"
                 aria-controls="navContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -41,19 +41,13 @@
                     </li>
                     <li class="nav-item my-auto mr-md-4">
                         <a class="nav-link p-0 text-center" href="#">
-                            <i class="fa fa-camera-retro fa-2x text-primary" aria-hidden="true"></i>
+                            <i class="fa fa-camera-retro fa-2x" aria-hidden="true"></i>
                             <p class="m-0 p-0">Photos</p>
                         </a>
                     </li>
-                    <li class="nav-item my-auto mr-md-4">
-                        <a class="nav-link p-0 text-center" href="#">
-                            <i class="fa fa-question fa-2x" aria-hidden="true"></i>
-                            <p class="m-0 p-0">Advice</p>
-                        </a>
-                    </li>
                     <li class="nav-item my-auto mr-4 text-center my-auto d-none d-md-block">
-                        <button class="my-auto btn p-0">
-                            <i class="fa fa-lightbulb-o fa-2x text-warning p-0 my-auto" aria-hidden="true"></i>
+                        <button class="my-auto btn p-0 rounded-circle">
+                            <i class="fa fa-lightbulb-o fa-2x p-0 my-auto" aria-hidden="true"></i>
                         </button>
                     </li>
                 </ul>
@@ -65,43 +59,180 @@
 
     <div class="container-fluid mt-5">
         <div class="row">
-            <div class="col-12 col-lg-3 px-2">
-                <div class="container p-sm-0">
-                    <div class="row p-0">
-                        <div class="col-xs-12 col-sm-6 col-lg-12 p-0 pr-sm-1 pr-md-0 m-0">
-                            <div class="card border-dark shadow mb-3 mx-auto" style="max-width: 18rem;">
-                                <div class="card-header text-center bg-success">
+            <!------------------------------------Main Body----------------------------------->
+            <div class="col-xs-12 col-lg-7 py-0 px-5" >
+                <div id="blogSlide" class="carousel slide carousel-fade shadow-lg mx-auto" data-ride="carousel" ">
+                    <ol class="carousel-indicators">
+                      <li data-target="#blogSlide" data-slide-to="0" class="active"></li>
+                      <li data-target="#blogSlide" data-slide-to="1"></li>
+                      <li data-target="#blogSlide" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner rounded">
+                      <div class="carousel-item active">
+                        <div class="card-img-top" id="carouselItem1" alt="Epcot - Flower and Garden"></div>
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Cheapest Way To Fly</h5>
+                          <p>The who, what, when, where and why of our flying decisions.</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="card-img-top" id="carouselItem2" alt="Universal Orlando Globe"></div>
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Our Experience at Universal Orlando</h5>
+                          <p>What we thought about the parks and our stay at Universal's Endless Summer Resort</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="card-img-top" id="carouselItem3" alt="Chicken Guy Disney Springs"></div>
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Value Eats in Disney World</h5>
+                          <p>Great food without busting your wallet.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#blogSlide" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#blogSlide" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+                  <!------------------------------------Pills----------------------------------->
+                  <h5 class="mb-0 mt-5 text-center">All Posts</h5>
+                  <hr class="m-0">
+
+                  <div class="row row-cols-1 row-cols-md-1">
+                    <a href="#" class="btn btn-pill" role="button">
+                        <div class="col mb-4">
+                            <div class="card mt-3 border-0 rounded-pill shadow-sm">
+                                <div class="row no-gutters">
+                                <div class="col-md-4">
+                                    <div class="card-img-top rounded-pill" id="pillImage1" alt="Epcot - Flower and Garden"></div>
+                                </div>
+                                <div class="col-md-8 pr-4 pl-4 pl-md-0">
+                                    <div class="card-body">
+                                    <h5 class="card-title">Walt Disney World</h5>
+                                    <p class="card-text">What we plan to do and see on our trip to Orlando, Florida</p>
+                                    <p class="card-text"><small class="text-muted">Last updated 2/11/2021</small></p>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="btn btn-pill" role="button">
+                        <div class="col mb-4">
+                            <div class="card border-0 rounded-pill shadow-sm">
+                                <div class="row no-gutters">
+                                <div class="col-md-8 pl-4">
+                                    <div class="card-body">
+                                    <h5 class="card-title">Lake Ouachita</h5>
+                                    <p class="card-text">Visiting the beautiful Ouachita Lake and the Ozark Mountains</p>
+                                    <p class="card-text"><small class="text-muted">Last updated 8/15/2020</small></p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card-img-top rounded-pill" id="pillImage2" alt="Epcot - Flower and Garden"></div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="btn btn-pill" role="button">
+                        <div class="col mb-4">
+                            <div class="card border-0 rounded-pill shadow-sm">
+                                <div class="row no-gutters">
+                                <div class="col-md-4">
+                                    <div class="card-img-top rounded-pill" id="pillImage3" alt="Epcot - Flower and Garden"></div>
+                                </div>
+                                <div class="col-md-8 pr-4 pl-4 pl-md-0">
+                                    <div class="card-body">
+                                    <h5 class="card-title">Universal Orlando</h5>
+                                    <p class="card-text">Using our annual passes for the first time to visit both Universal theme parks during a pandemic</p>
+                                    <p class="card-text"><small class="text-muted">Last updated 5/20/2020</small></p>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="btn btn-pill" role="button">
+                        <div class="col mb-4">
+                            <div class="card border-0 rounded-pill shadow-sm">
+                                <div class="row no-gutters">
+                                <div class="col-md-8 pl-4">
+                                    <div class="card-body">
+                                    <h5 class="card-title">Value Disney Dining</h5>
+                                    <p class="card-text">A discussion over our favorite places to eat when we are looking to save our wallets from harm</p>
+                                    <p class="card-text"><small class="text-muted">Last updated 03/27/2020</small></p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card-img-top rounded-pill" id="pillImage4" alt="Epcot - Flower and Garden"></div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                  </div>
+            </div>
+            <!------------------------------------Side Body----------------------------------->
+            <div class="col-lg-5 pr-3 order-3">
+                <div class="container">
+                    <div class="row">
+                        <!------------------------------------Videos----------------------------------->
+                        <div class="col-12 col-xl-6 pr-xl-1 px-0">
+                            <div class="embed-responsive embed-responsive-16by9 mb-3">
+                                <iframe class="embed-responsive-item w-100 bg-dark" src="https://www.youtube.com/embed/z1r7nQdZg44" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <div class="col-12 col-xl-6 pl-xl-1 px-0">
+                            <div class="embed-responsive embed-responsive-16by9 mb-3">
+                                <iframe class="embed-responsive-item w-100 bg-dark" src="https://www.youtube.com/embed/MCTWiopcOa4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <div class="col-12 col-xl-6 px-0 pr-xl-1 ">
+                            <div class="embed-responsive embed-responsive-16by9 mb-3">
+                                <iframe class="embed-responsive-item w-100 bg-dark" src="https://www.youtube.com/embed/D0liQxE_JVM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <div class="col-12 col-xl-6 px-0 pl-xl-1 ">
+                            <div class="embed-responsive embed-responsive-16by9 mb-5">
+                                <iframe class="embed-responsive-item w-100 bg-dark" src="https://www.youtube.com/embed/D0liQxE_JVM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <!------------------------------------Cards----------------------------------->
+                        <div class="col-xs-12 col-sm-6 p-0 pr-sm-1 m-0">
+                            <div class="card border-dark shadow mb-3 mx-auto cardWidth">
+                                <div class="card-header text-center">
                                     <h4>Upcoming Trip</h4>
                                 </div>
-                                <div class="card-img-top" alt="Epcot - Flower and Garden" style="height: 150px; width: 100%; background-image: url(img/honeyMoon.jpg); background-position: center; background-size: cover;"></div>
+                                <div class="card-img-top cardImgHeight" id="cardImage1" alt="Epcot - Flower and Garden"></div>
                                 <div class="card-body text-center">
                                     <h5 class="card-title">Orlando, Florida</h5>
                                     <p class="card-text">Me and my wife will be taking our honeymoon in Orlando, Florida where we plan on enjoying the local theme parks.</p>
-                                    <a href="#" class="btn btn-primary">Learn More</a>
+                                    <a href="#" class="btn">Learn More</a>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xs-12 col-sm-6 col-lg-12 p-0 pl-sm-1 pr-md-0 m-0">
-                            <div class="card border-dark shadow mb-3 mx-auto" style="max-width: 18rem;">
-                                <div class="card-header text-center bg-warning">
+                        <div class="col-xs-12 col-sm-6 p-0 pl-sm-1 m-0">
+                            <div class="card border-dark shadow mb-3 mx-auto cardWidth">
+                                <div class="card-header text-center bg-primary">
                                     <h4>Recent Trip</h4>
                                 </div>
-                                <div class="card-img-top" alt="Epcot - Flower and Garden" style="height: 150px; width: 100%; background-image: url(img/ouachita.jpg); background-position: center; background-size: cover;"></div>
+                                <div class="card-img-top cardImgHeight" id="cardImage2" alt="Boat on Lake Ouachita"></div>
                                 <div class="card-body text-center">
                                   <h5 class="card-title">Lake Ouachita, Arkansas</h5>
                                   <p class="card-text">Myself, my wife and our friends take a visit to Lake Ouachita. One of the cleanest and clearest lakes in the nation.</p>
-                                  <a href="#" class="btn btn-primary">Learn More</a>
+                                  <a href="#" class="btn" role="button">Learn More</a>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div> 
-            </div>
-            <div class="col-xs-12 col-md-6 bg-light p-0 mx-2">
-                wwwwwwwww
-            </div>
-            <div class="col col-md-3 p-0">
 
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -111,5 +242,6 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
 
 </html>

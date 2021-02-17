@@ -20,8 +20,10 @@
     <nav class="navbar sticky-top navbar-expand-md shadow p-0">
         <div class="container-fluid mx-0 px-0">
             <a class="navbar-brand ml-5" href=#><h1>Voyager</h1></a>
-            <i class="fa fa-lightbulb-o fa-2x text-warning ml-auto mr-4 d-md-none" aria-hidden="true"></i>
-            <button class="navbar-toggler navText" type="button" data-toggle="collapse" data-target="#navContent"
+            <button class="my-auto btn p-0 rounded-circle ml-auto mr-4 d-md-none switch">
+                <i class="fa fa-lightbulb-o fa-2x p-0 my-auto ml-auto" aria-hidden="true"></i>
+            </button>
+            <button class="navbar-toggler navText navbar-light mr-3" id="navBurger" type="button" data-toggle="collapse" data-target="#navContent"
                 aria-controls="navContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -46,7 +48,7 @@
                         </a>
                     </li>
                     <li class="nav-item my-auto mr-4 text-center my-auto d-none d-md-block">
-                        <button class="my-auto btn p-0 rounded-circle">
+                        <button class="my-auto btn p-0 rounded-circle switch" onclick="darkMode()">
                             <i class="fa fa-lightbulb-o fa-2x p-0 my-auto" aria-hidden="true"></i>
                         </button>
                     </li>
@@ -230,9 +232,8 @@
                                 </div>
                             </div>
                         </div>
-
                     </div>
-                </div>
+                </div>                        
             </div>
         </div>
     </div>

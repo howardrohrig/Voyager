@@ -2,15 +2,49 @@ body {
     background-color: #E2EDFF;
     margin: 0;
     padding: 0;
+    transition: background-color .5s;
+}
+
+body.dark-mode {
+    background-color: #323232;
 }
 
 nav {
     background-color: white;
+    transition: background-color .5s;
+}
+
+nav.dark-mode {
+    background-color: black;
+}
+
+ul.nav-pills li {
+    padding-top: 10px;
+}
+
+.nav-pills .nav-link.active{
+    background-color: #1B3B66;
+}
+
+.nav-pills .nav-link.active:hover{
+    background-color: #1B3B90;
+}
+
+.nav-pills .nav-link:hover{
+    border: #1B3B90 2px solid;
+}
+
+.nav-pills .nav-link.active p{
+    color: white;
 }
 
 a,h5,p {
     color: #1B3B66;
     transition: color .5s;
+}
+
+a.dark-mode,h5.dark-mode,p.dark-mode {
+    color: #F1F6FF;
 }
 
 hr {
@@ -19,14 +53,26 @@ hr {
     background-color: #1B3B66;
 }
 
+hr.dark-mode {
+    background-color: #F1F6FF;
+}
+
 button.rounded-circle {
     background-color: #E2EDFF;
     height: 50px;
     width: 50px;
 }
 
+button.rounded-circle.dark-mode {
+    background-color: #d4d7e6;
+}
+
 button.rounded-circle:hover {
     background-color: #d4d7e6;
+}
+
+button.rounded-circle.dark-mode:hover {
+    background-color: #E2EDFF;
 }
 
 button.rounded-circle i {
@@ -34,29 +80,48 @@ button.rounded-circle i {
     color: #f0ad4e;
 }
 
+button.rounded-circle.dark-mode i {
+    color: darkgrey;
+}
+
 button.rounded-circle i:hover {
     transform: rotateZ(360deg);
     color: darkgrey;
+}
+
+button.rounded-circle.dark-mode i:hover {
+    transform: rotateZ(-360deg);
+    color: #f0ad4e;
 }
 
 .nav-brand:hover, .nav-link:hover, a.active{
     color: #1B3B90;
 }
 
-a.active:after, a.nav-link:after {
-    content: '';
-    display: block;
-    margin: auto;
-    height: 3px;
-    width: 0px;
-    background: transparent;
-    transition: width .5s ease, background-color .5s ease;
+.nav-brand.dark-mode:hover, .nav-link.dark-mode:hover, a.active.dark-mode{
+    color: #F1F6FF;
 }
 
-a.active:after, a.nav-link:hover:after {
-    width: 100%;
-    border-radius: 20px;
-    background: #1B3B90;
+@media only screen and (min-width: 768px) {
+    a.active:after, a.nav-link:after {
+        content: '';
+        display: block;
+        margin: auto;
+        height: 3px;
+        width: 0px;
+        background: transparent;
+        transition: width .5s ease, background-color .5s ease;
+    }
+    
+    a.active:after, a.nav-link:hover:after {
+        width: 100%;
+        border-radius: 20px;
+        background: #1B3B90;
+    }  
+    
+    a.active.dark-mode:after, a.nav-link.dark-mode:hover:after {
+        background: white;
+    }
 }
 
 a.carousel-control-prev, a.carousel-control-next {
@@ -82,8 +147,16 @@ a.carousel-control-prev:hover, a.carousel-control-next:hover {
     transition: background-color .3s;
 }
 
+.card.dark-mode, .card.rounded-pill.dark-mode {
+    background-color:#515151;
+}
+
 .card.rounded-pill:hover {
     background-color: #d4d7e6;
+}
+
+.card.rounded-pill.dark-mode:hover {
+    background-color: #666666;
 }
 
 .card-img-top {
@@ -96,7 +169,6 @@ a.carousel-control-prev:hover, a.carousel-control-next:hover {
 
 .card-img-top.rounded-pill {
     height: 100%;
-    background-color: #F1F6FF;
 }
 
 .cardWidth {
